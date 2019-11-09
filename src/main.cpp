@@ -1,15 +1,12 @@
 #include <iostream>
-
-float sum(float a, float b) {
-    return (a + b);
-}
+#include "../include/sum.h"
 
 int main() {
     //
     float a, b;
     a = 1.2;
     b = 3.5;
-    float c = sum(a, b);
+    float c = sum_(a, b);
     std::cout << c << std::endl;
 }
 
