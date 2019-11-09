@@ -1,15 +1,26 @@
 {
     "version": "2.0.0",
     "tasks": [
-      {
-        "label": "build hello world",
-        "type": "shell",
-        "command": "g++",
-        "args": ["-g", "-o", "helloworld", "src/helloworld.cpp"],
-        "group": {
-          "kind": "build",
-          "isDefault": true
+        {
+            "label": "Build C++ project",
+            "type": "shell",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "command": "make",
+        },
+        {
+            "label": "Build & run C++ project",
+            "type": "shell",
+            "group": {
+                "kind": "test",
+                "isDefault": true
+            },
+            "command": "make",
+            "args": [
+                "run"
+            ]
         }
-      }
     ]
-  }
+}
