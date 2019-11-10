@@ -1,7 +1,7 @@
 #include <vector>
 
 
-std::vector<int> slice(const std::vector<int>& v, int start=0, int end=-1) {
+std::vector<int> slice(const std::vector<int>v, int start=0, int end=-1) {
     int oldlen = v.size();
     int newlen;
 
@@ -13,13 +13,13 @@ std::vector<int> slice(const std::vector<int>& v, int start=0, int end=-1) {
 
     std::vector<int> nv(newlen);
 
-    for (int i=0; i<newlen; i++) {
+    for (int i = 0; i < newlen; i++) {
         nv[i] = v[start+i];
     }
     return nv;
 }
 
-std::vector<int> mergeSort(std::vector<int> v) {
+std::vector<int> mergeSort(std::vector<int> &v) {
     int vec_size = v.size();
     
     if (vec_size > 1) {
