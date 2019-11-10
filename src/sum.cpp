@@ -1,5 +1,5 @@
-# include "../include/sum.h"
+#include "sum.h"
 
-float sum_(float a, float b) {
+float sum_custom(float a, float b) {
     return (a + b);
 }
